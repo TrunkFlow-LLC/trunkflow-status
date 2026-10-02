@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>TrunkFlow service status</title>
+<style>
+:root{font:17px/1.6 system-ui,sans-serif;color:#163d32;background:#f2f6f1}body{max-width:760px;margin:auto;padding:32px 20px}h1{font-size:2rem}h2{font-size:1.15rem;margin:0 0 10px}.service{border:1px solid #c1cec3;border-radius:18px;padding:22px;margin:18px 0;background:white}.service p{margin-bottom:0;color:#475a50}.operational strong{color:#236331}.unavailable strong{color:#963419}.unknown strong{color:#675029}a{color:inherit}small{display:block;margin-top:32px} @media(prefers-color-scheme:dark){:root{color:#e3ede2;background:#10241c}.service{background:#183229;border-color:#496657}.service p{color:#b5c9bc}.operational strong{color:#8fe79d}.unavailable strong{color:#ffaa92}.unknown strong{color:#ebcd7c}}
+</style></head><body><main><p>TrunkFlow</p><h1>Service status</h1>
+<p id="overall" role="status">Status unavailable until a recent check can be verified.</p>
+<div id="services" aria-live="polite"><section class="service unknown"><h2>Current status</h2><strong>Status unavailable</strong><p>JavaScript is needed to verify how recent these checks are.</p></section></div>
+<p>Checks run on GitHub, independently of our app hosting and database providers. Scheduled checks can be delayed. A check older than 20 minutes is marked unavailable.</p>
+<p>If the cloud connection is interrupted, supported native recording can continue locally and sync later. Missing readings are never treated as zero consumption.</p>
+<p><a href="https://app.trunkflowtech.com/">Return to TrunkFlow</a></p>
+<small>This page reports public service availability only. It contains no account details, shower records, device identifiers or internal monitoring measurements.</small>
+</main><script type="module" src="./status.js"></script></body></html>

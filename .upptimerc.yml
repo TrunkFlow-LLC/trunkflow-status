@@ -1,0 +1,26 @@
+# User-confirmed organization. Never copy the application repository here.
+owner: TrunkFlow-LLC
+repo: trunkflow-status
+user-agent: trunkflow-status
+sites:
+  - name: TrunkFlow web app
+    slug: trunkflow-web
+    url: https://app.trunkflowtech.com/
+    expectedStatusCodes: [200]
+    __dangerous__body_down_if_text_missing: '<div id="root"></div>'
+    maxResponseTime: 5000
+  - name: TrunkFlow cloud connection
+    slug: trunkflow-cloud
+    url: https://app.trunkflowtech.com/api/readiness
+    expectedStatusCodes: [200]
+    __dangerous__body_down_if_text_missing: '"ready":true'
+    maxResponseTime: 5000
+skipDescriptionUpdate: true
+skipTopicsUpdate: true
+skipHomepageUpdate: true
+skipDeleteIssues: true
+status-website:
+  name: TrunkFlow status
+  baseUrl: /trunkflow-status
+# We deliberately publish our freshness-aware page instead of the default Upptime page.
+# Never add an automatic Upptime template-update workflow: it could overwrite this publishing workflow.
