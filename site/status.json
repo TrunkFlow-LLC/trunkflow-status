@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "checked_at": "2026-10-31T00:10:57.100Z",
+  "checked_at": "2026-10-31T05:38:47.552Z",
   "services": [
     {
       "id": "web",
       "state": "operational",
-      "checked_at": "2026-10-31T00:10:57.100Z",
-      "last_success_at": "2026-10-31T00:10:57.100Z"
+      "checked_at": "2026-10-31T05:38:47.552Z",
+      "last_success_at": "2026-10-31T05:38:47.552Z"
     },
     {
       "id": "cloud",
       "state": "operational",
-      "checked_at": "2026-10-31T00:10:57.100Z",
-      "last_success_at": "2026-10-31T00:10:57.100Z"
+      "checked_at": "2026-10-31T05:38:47.552Z",
+      "last_success_at": "2026-10-31T05:38:47.552Z"
     }
   ]
 }
